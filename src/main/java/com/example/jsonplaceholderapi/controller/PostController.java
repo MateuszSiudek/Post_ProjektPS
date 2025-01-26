@@ -41,7 +41,7 @@ public class PostController {
         return postService.updatePost(id, updatedPost);
     }
 
-    @PutMapping
+    @PostMapping
     public Post addPost(@RequestBody Post newPost) {
         return postService.addPost(newPost);
     }
